@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* Header */
+header {
+    padding: 40px;
+    background: #250349;
+    background: linear-gradient(to right, #250349, #6a11cb);
+    color: rgb(28, 235, 187);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* Navigation buttons */
+nav button {
+    background: #ff6a00;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav button:hover {
+    background: #ff2e63;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Typing effect for About */
+#about-text {
+    font-size: 1.2em;
+    white-space: pre-line;
+    text-align: left;
+}
+
+/* Schedule Animation */
+#schedule ul {
+    list-style: none;
+    padding: 0;
+}
+
+#schedule li {
+    background: rgba(84, 7, 239, 0.407);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideIn 0.5s forwards;
+}
+
+#schedule li:nth-child(1) { animation-delay: 0.3s; }
+#schedule li:nth-child(2) { animation-delay: 0.6s; }
+#schedule li:nth-child(3) { animation-delay: 0.9s; }
+#schedule li:nth-child(4) { animation-delay: 1.2s; }
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#schedule h2 {
+    color: #000;
+}
+
+/* Contact fade-in */
+#contact {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    margin: 20px auto;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Style placeholders for inputs and textarea */
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: #053d54;
+    background-color: aquamarine;
+}
+
+/* Optional: Style input fields themselves */
+#contact input,
+#contact textarea {
+    color: #053d54;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+/* Make Send button blue in Contact section */
+#contact button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.word-highlight {
+    font-weight: bold;
+    background: yellow;
+    color: #000;
+    transition: background 0.3s, font-weight 0.3s;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Make Contact form labels and heading black */
+#contact h2,
+#contact label {
+    color: #000;
+}
+#about-text {
+    color: #000;
+    font-style: italic;
+}
+#about h2{
+    color: #000;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

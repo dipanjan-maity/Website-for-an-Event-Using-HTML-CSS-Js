@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEEKS FOR GEEKS HACKATHON</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>BOOTCAMP ON LOW-CODE/NO-CODE DEVELOPMENT</h1>
+        <nav>
+            <button onclick="showSection('about')">About</button>
+            <button onclick="showSection('schedule')">Schedule</button>
+            <button onclick="showSection('contact')">Contact</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="hidden">
+            <h2>About</h2>
+            <p id="about-text"></p>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="hidden">
+            <h2>Schedule</h2>
+            <ul>
+                <li style="color: black;">Day 1 - Registration</li>
+                <li style="color: black;">Day 2 - Coding Round</li>
+                <li style="color: black;">Day 3 - Project Submission</li>
+                <li style="color: black;">Day 4 - Result Announcement</li>
+            </ul>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="hidden">
+         <h2>Contact Us</h2>
+         <form>
+            <label for="name" ><b>Name:</b></label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email"><b>Email:</b></label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message"><b>Message:</b></label><br>
+            <textarea id="message" name="message" rows="4"></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
